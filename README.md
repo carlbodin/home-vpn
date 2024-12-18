@@ -26,9 +26,10 @@ to the bottom of the file.
 7. Test the script `./duck.sh`. We can also see if last attempt succeded (OK) or not (KO) running `cat duck.log`. If KO, check domain and token in duck.sh.
 8. Finally, ensure cron autostart on reboot. This should be on by default on Raspberry Pi OS. If not, try `sudo service cron start`.
 
-## Setup router port forwarding
+## Setup router port forwarding UDP
 1. Enable port forwarding on home router. There are no official guides for this since it is almost a unique interface for each router and model.
 2. Wireguard default it 51820. Use this unless you have a good reason not to.
+3. Make sure the protocol is set to UDP, not TCP.
 
 ## Install and setup PiVPN on server
 1. Have an ssh-able unit with Raspberry PI OS installed. Preferrably the "Light" and latest OS version according to pivpn-io, but any will do as long as ssh access is enabled at the start.
